@@ -1,4 +1,8 @@
 # StadiumMind AI 🏟️🤖
+[![GitHub Repo](https://img.shields.io/badge/GitHub-StadiumMind%20AI-181717?logo=github)](https://github.com/aswathi-1804/Stadium-mind-AI)
+[![Built with React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev/)
+[![Built with Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite)](https://vitejs.dev/)
+
 ### The Autonomous AI-powered Operating System for Smart Stadiums & Tournament Operations
 **Built for the Google Build with AI Hackathon**
 
