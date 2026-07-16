@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  /* Custom Scrollbar skin for Glassmorphism */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.3);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.15);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(34, 211, 238, 0.4);
+  }
+}
+
+/* Glassmorphism utility cards */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+/* Neon glow tags */
+.neon-glow-cyan {
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.neon-glow-rose {
+  text-shadow: 0 0 10px rgba(244, 63, 94, 0.5);
+}
+
+.neon-glow-emerald {
+  text-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
+}
+
+/* Evacuation SVG path movement */
+@keyframes sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ringOut {
+  0% { transform: scale(0.6); opacity: 0.6; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.sm-sweep {
+  animation: sweep 4s linear infinite;
+}
+
+.sm-ring {
+  animation: ringOut 2.5s ease-out infinite;
+}
